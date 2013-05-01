@@ -238,7 +238,7 @@ we use a list monoid (inside another list) but we can use this pattern
 to keep a list of anything that forms a monoid, simply by
 substituting \texttt{++} for the binary operation of that specific
 monoid.\footnote{We can take this even further by making our \texttt{Pair} a
-  monoid itself and then using that as the log. For any monoid $a$ and
+  monoid itself and then using that as the log. For any monoid \texttt{a} and
 any monoid \texttt{b}, we can make \texttt{Pair a b} a monoid by making defining
 \texttt{mempty = Pair (mempty a) (mempty b)} and \texttt{mappend (Pair a b) (Pair c
 d) = Pair (mappend a c) (mappend b d)}.} In
@@ -265,7 +265,7 @@ mconcat (Monoid a) => [a] -> a
 mconcat = foldl mappend mempty
 \end{lstlisting}
 Here
-\texttt{(Monoid a) => [a] -> a} denotes that a has to be a
+\texttt{(Monoid a) => [a] -> a} denotes that \texttt{a} has to be a
 monoid. We can now use mconcat on any monoid:
 \begin{lstlisting}
 mconcat ["Hello ", "everyone ", "!!"] = "Hello everyone here!!"
