@@ -2,7 +2,6 @@
 \begin{document}
 
 \title{Monoids and their uses}
-\subtitle{[Extended Abstract]
 \numberofauthors{1}
 \author{
 \alignauthor
@@ -33,9 +32,9 @@ language in the world by the end of 2013. In fact, no
 purely-functional languages even make the top 20 in popularity
 rankings\cite{tiobe:rankings}. Many of the languages that are gaining
 popularity nowadays at least include functional programming
-elements. Some examples include C# (popular LINQ library is
+elements. Some examples include C\# (popular LINQ library is
 implemented with monads), JavaScript (first-class functions and
-closures) and Python (\lambda, first-class functions, built-in
+closures) and Python ($\lambda$, first-class functions, built-in
 functional programming libraries\cite{python:itertools}). With
 increased interest in the functional part of the languages that many
 programmers already use, it's natural that interest in type theory and
@@ -55,7 +54,7 @@ There are a couple of definitions that can be given for what a monoid
 actually is. Monoids play a part in abstract algebra and category
 theory. From a point of view of abstract algebra, a monoid is a simple
 algebraic structure with three axioms. A monoid is a set $S$ and a
-binary operation \cdot such that:
+binary operation $\cdot$ such that:
 \begin{itemize}
 \item Closure
   \begin{itemize}
@@ -138,6 +137,7 @@ that for any set $L$ with all elements of type $[a]$:
   \item $\forall x \in L: [] ++ x = x ++ [] = x$
   \item $[]$ is the identity
   \end{itemize}
+\end{itemize}
 Proof by structural induction on $++$ is possible and fairly easy but
 is omitted for brevity. Here $mappend = (++)$ and $mempty = []$
 
